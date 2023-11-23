@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interfaz de Inventario</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre del Producto</th>
+                <th>Cantidad</th>
+                <!-- Agrega más columnas según tu base de datos -->
+            </tr>
+        </thead>
+        <tbody>
+    <!--Un inventario tiene que tener registros de los productos que posee, asi como el control de entradas y salidas
+    Por lo que, debemos tener pertenencia de datos, a lo que lo solucionaremos con SQL-->
+        <?php include 'get_inventory.php'; ?>
+            
+            <!-- Este archivo PHP se encargará de obtener los datos de la base de datos -->
+        </tbody>
+    </table>
+
+</body>
+</html>
